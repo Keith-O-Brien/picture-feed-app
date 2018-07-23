@@ -1,0 +1,8 @@
+%h1 Yaaaaaaaaaaaaaaaaaaaaaaaaaaaaay
+
+- @albums.each do |media|
+  .col-sm-12.col-md-4
+    .thumbnail
+      = image_tag media.images.low_resolution.url
+      .caption
+        = media.user.username
