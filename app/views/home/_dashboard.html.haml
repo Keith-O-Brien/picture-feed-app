@@ -1,8 +1,8 @@
 %h1 Yaaaaaaaaaaaaaaaaaaaaaaaaaaaaay
 
-- @albums.each do |media|
+- @feed.each do |popular|
   .col-sm-12.col-md-4
     .thumbnail
-      = image_tag media.images.low_resolution.url
+      = image_tag popular.images.low_resolution.url
       .caption
-        = media.user.username
+        = popular.user.username

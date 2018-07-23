@@ -7,7 +7,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-instagram'
 gem "haml-rails", "~> 1.0"
-gem 'instagram'
+gem 'instagram_api_client'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
