@@ -3,6 +3,4 @@
 - @feed.each do |popular|
   .col-sm-12.col-md-4
     .thumbnail
-      = image_tag popular.images.low_resolution.url
-      .caption
-        = popular.user.username
+      %img{:src=>"#{popular.images.first.low_resolution.url}"}
