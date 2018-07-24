@@ -7,6 +7,7 @@ ruby 2.3.3
 gem 'rails', '~> 5.2.0'
 
 * Screenshots
+
 ![Landing Page](app/assets/images/landing_page.png?raw=true "Screenshot of Landing Page")
 
 
