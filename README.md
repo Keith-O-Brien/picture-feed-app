@@ -9,7 +9,8 @@ Things you may want to cover:
 
 * System dependencies
 
-* Configuration
+* Screenshots
+![Landing Page](app/assets/images/landing_page.png?raw=true "Screenshot of Landing Page")
 
 * Database creation
 
