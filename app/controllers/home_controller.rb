@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   def index
     if user_signed_in?
 
-      #@feed = InstagramApi.tag("KOBARA").recent_media
+      @feed = InstagramApi.user.recent_media
     end
   end
 end

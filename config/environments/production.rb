@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  config.read_encrypted_secrets = true    #currently causes problems with sprockets
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 

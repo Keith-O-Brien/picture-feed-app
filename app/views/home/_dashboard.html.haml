@@ -1,1 +1,16 @@
-%h1 Yaaaaaaaaaaaaaaaaaaaaaaaaaaaaay
+%header.masthead
+  .container.h-100
+    .row.h-100
+      .col-lg-7.my-auto
+        .header-content.device-container
+          %h1.mb-5 Insta Feed
+          %p Time to view some pics!
+
+
+          .btn.btn-outline.btn-xl
+            - if user_signed_in?
+              = link_to 'Sign out', destroy_user_session_path, method: :delete
+
+  .container.h-100
+    - @feed.data.each do |f|
+      %img{:src=>"#{f.images.low_resolution.url}"}
