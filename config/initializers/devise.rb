@@ -10,8 +10,8 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '7493f484e7755981cd19c8d90908e3ef2963a3a541c779d535e3cb468b86144ca20f708915fb1f7f3f031aa8536c2e052a6019dbadc1a8257a6e049abbd58257'
 
-  config.omniauth :instagram, '6808015b03ff431783930e0346e04648', 'e317d22ffb5e4b82b60c72385d37166d'
-
+  config.omniauth :instagram, Rails.application.secrets.CLIENT_ID, Rails.application.secrets.CLIENT_SECRET
+  config.secret_key = 'd0fd34aae739bf20ab52343439213b9eb64108e3e356c294cc328f924f2020a615949c7b78698741426abaa1f6a5d2329568159a2d12b2e34886d50da09fe68b'
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
